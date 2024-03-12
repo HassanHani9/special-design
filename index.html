@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Special project</title>
+    <!-- css style -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- fontAwsome -->
+    <link rel="stylesheet" href="/css/all.css" />
+    <link rel="stylesheet" href="/css/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:wght@300;400;500&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./webfonts/" />
+  </head>
+  <body>
+    <!-- Start settings box -->
+    <div class="setting-box">
+      <span class="gear">
+        <i class="fa-solid fa-gear"></i>
+      </span>
+
+      <!-- to shake add class  fa-shake -->
+      <div class="setting-container">
+        <div class="color-sec text-center p-1">
+          <span class="fw-bold text-black-50">Colors</span>
+          <ul class="list-unstyled d-flex justify-content-center pt-2">
+            <li data-color="#ff9800" class="active"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#009688"></li>
+            <li data-color="#03a9f4"></li>
+            <li data-color="#4caf50"></li>
+          </ul>
+        </div>
+        <div class="background-sec text-center mt-3">
+          <span class="fw-bold text-black-50 p-1">Random Backgrounds</span>
+          <div class="background-sec-buttons d-flex justify-content-center">
+            <span class="button yes active" data-status="yes">Yes</span>
+            <span class="button no" data-status="no">No</span>
+          </div>
+        </div>
+        <div class="bullet-sec text-center mt-3">
+          <span class="fw-bold text-black-50 p-1 text-capitalize"
+            >Show bullets</span
+          >
+          <div class="bullet d-flex justify-content-center">
+            <span class="button active yes" data-status="yes">Yes</span>
+            <span class="button no" data-status="no">No</span>
+          </div>
+        </div>
+        <a
+          class="reset d-block w-100 mt-3 text-center text-decoration-none text-white p-2"
+          >Reset Options</a
+        >
+      </div>
+    </div>
+    <!-- End settings box -->
+    <div class="landing">
+      <div class="container">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">Special Design</a>
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="navbar-text collapse navbar-collapse justify-content-lg-end justify-content-md-start"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav position-relative mt-1">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#about-us"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Timeline</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testimonials</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End navbar -->
+      </div>
+      <!-- Start Bullets -->
+      <div class="bullets">
+        <div class="bullet" data-section=".landing" blulletName="About"></div>
+        <div class="bullet" data-section="" blulletName="Skills"></div>
+        <div class="bullet" data-section="" blulletName="Gallery"></div>
+        <div class="bullet" data-section="" blulletName="Timeline"></div>
+        <div class="bullet" data-section="" blulletName="Features"></div>
+        <div class="bullet" data-section="" blulletName="Testimonials"></div>
+      </div>
+      <!-- End Bullets -->
+      <div class="about text-center">
+        <div class="text text-white">
+          <h1 class="fw-bold">We Are <span>Creative</span> Agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+            odit nihil ullam nesciunt quidem iste
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="about-us pt-5 pb-5" id="about-us">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="text col-lg-8 col-md-12">
+            <h2 class="fw-bold">About Us</h2>
+            <p class="text-black-50">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis ipsum, tenetur dolores esse magni ratione distinctio!
+              Quod iusto neque fuga, maxime quos nostrum quibusdam dicta
+              deserunt blanditiis non voluptate id?
+            </p>
+          </div>
+          <div class="aboutImage col-lg-4 col-md-12">
+            <img src="images/about-us.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="ourskills pt-5 pb-5 position-relative" id="skills">
+      <div class="container">
+        <h2 class="fw-bold text-center pb-5">Our Skills</h2>
+        <div class="skill">
+          <div class="skillname">Html</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="80%" class="position-absolute"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillname">Css</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="60%" class="position-absolute"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillname">JavaScript</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="90%" class="position-absolute"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillname">Python</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="80%" class="position-absolute"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillname">Php</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="65%" class="position-absolute"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skillname">MySQL</div>
+          <div class="skillprogress position-relative">
+            <span data-progress="80%" class="position-absolute"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery pt-5 pb-5" id="gallery">
+      <div class="container">
+        <h2 class="fw-bold text-center pb-5">Our Gallery</h2>
+        <div class="row d-flex justify-content-center">
+          <img src="images/01.jpg" alt="Image One" class="img-fluid" />
+
+          <img src="images/02.jpg" alt="Image Two" class="img-fluid" />
+
+          <img src="images/03.jpg" alt="Image Three" class="img-fluid" />
+
+          <img src="images/04.jpg" alt="Image Four" class="img-fluid" />
+
+          <img src="images/05.jpg" alt="Image Five" class="img-fluid" />
+
+          <img src="images/06.png" alt="Image Six" class="img-fluid" />
+
+          <img src="images/07.jpg" alt="Image Seven" class="img-fluid" />
+
+          <img src="images/08.jpg" alt="Image eight" class="img-fluid" />
+
+          <img src="images/09.jpg" alt="Image nine" class="img-fluid" />
+
+          <img src="images/10.jpg" alt="Image ten" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <div class="timeline overflow-hidden position-relative">
+      <div class="container">
+        <div class="Dateone text-center">2018</div>
+        <div class="left bg-white p-4 position-relative mb-4">
+          <div class="left-content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+              Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+              nobis quam?
+            </p>
+          </div>
+        </div>
+        <div class="left bg-white p-4 position-relative mb-4">
+          <div class="left-content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+              Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+              nobis quam?
+            </p>
+          </div>
+        </div>
+        <div class="Dateone text-center">2016</div>
+        <div class="left bg-white p-4 position-relative mb-4">
+          <div class="left-content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+              Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+              nobis quam?
+            </p>
+          </div>
+        </div>
+        <div class="left bg-white p-4 position-relative mb-4">
+          <div class="left-content">
+            <h3>Testing Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+              ex molestiae illo nisi quaerat veniam beatae aliquid eligendi.
+              Aliquid tenetur quas ex, sequi porro nam commodi placeat maxime
+              nobis quam?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features pt-4 pb-5">
+      <div class="container">
+        <h2 class="fw-bold text-center pb-5">Our Features</h2>
+        <div class="features-container">
+          <div class="row text-center">
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/programming.svg" alt="" />
+              <h4>Mobile Develope</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/advertising.svg" alt="" />
+              <h4>Development</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/graphic-design.svg" alt="" />
+              <h4>Marketing</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/hosting-icon.svg" alt="" />
+              <h4>Hostingt</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/mobile-app.svg" alt="" />
+              <h4>Cloud and Servers</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+            <div class="Box col-lg-4 mb-5">
+              <img src="images/web-design.svg" alt="" />
+              <h4>Seo</h4>
+              <p>
+                We are professional marketeers, we will do anything you imagine
+                in no time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials position-relative z-3 pt-5">
+      <div class="container pt-4 pb-4">
+        <div class="row">
+          <h3 class="text-white">Testimonials</h3>
+          <div class="col-lg-4">
+            <div class="box pt-4 bg-white">
+              <p class="text-black-50">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="cardd d-flex flex-row align-content-center">
+                <img src="images/DDD.png" alt="" />
+                <div
+                  class="info d-flex flex-column justify-content-center ps-3 fw-bold"
+                >
+                  Ahemd mousad
+                  <br />
+                  <span class="fw-light text-black-50">Ceo at the company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box pt-4 bg-white">
+              <p class="text-black-50">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="cardd d-flex flex-row align-content-center">
+                <img src="images/DDD.png" alt="" />
+                <div
+                  class="info d-flex flex-column justify-content-center ps-3 fw-bold"
+                >
+                  Ahemd mousad
+                  <br />
+                  <span class="fw-light text-black-50">Ceo at the company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box pt-4 bg-white">
+              <p class="text-black-50">
+                Iam very happy with the product its amazing and i recieve it
+                very fast and the price was amazing.
+              </p>
+              <div class="cardd d-flex flex-row align-content-center">
+                <img src="images/DDD.png" alt="" />
+                <div
+                  class="info d-flex flex-column justify-content-center ps-3 fw-bold"
+                >
+                  Ahemd mousad
+                  <br />
+                  <span class="fw-light text-black-50">Ceo at the company</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-us pt-5 position-relative z-2">
+      <div class="overlay"></div>
+      <div class="container pt-4">
+        <h2 class="fw-bold text-center pb-5">Contact Us</h2>
+        <form action="">
+          <div class="row justify-content-center">
+            <div class="col-lg-4">
+              <div class="left d-flex flex-column">
+                <input type="text" placeholder="Name" name="username" />
+                <input type="text" placeholder="Your Phone" name="phone" />
+                <input type="text" placeholder="Your Email" name="Email" />
+                <input type="text" placeholder="Subject" name="subject" />
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="right d-flex flex-column">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <input type="submit" />
+              </div>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
